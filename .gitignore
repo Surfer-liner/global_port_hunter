@@ -1,0 +1,46 @@
+# —————————————————————————————————————————————————— Files and directories —————
+
+# Metadata and display settings for MacOS finder
+.DS_Store
+# Information about the HFS+ file system
+.AppleDouble
+# Local file display settings
+.LSOverride
+# Spotlight indexes for quick search
+.Spotlight-V100
+# Manage deleted files and trash
+.Trashes
+# Custom icons for files and folders
+Icon?
+# Thumbnail images for Windows
+
+# ———————————————————————————————————————————— Cache and temporary files ———————
+
+# PyCharm cache directory or IntelliJ
+IDEA .idea/
+# Python files cache
+__pycache__/
+# Compiled Python files
+*.pyc
+# Temporary files created by text editor
+*~
+
+# —————————————————————————————————————— Local settings and configurations —————
+
+# Files with local enviroment settings
+.env
+# Directories with local settings
+..config/
+
+# ————————————————————————————————————————————————— Virtual environment ————————
+
+# Python virtual enviroment directory
+venv/
+.venv/
+
+# ——————————————————————————————————————————— Dependencies and binaries ————————
+
+# Directory with node dependencies.js
+node_modules/
+# Directory with the collected binary code
+build/
