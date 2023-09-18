@@ -13,14 +13,14 @@ This Python script scans multiple IP addresses and ports using multiprocessing, 
 Before you begin, ensure you have met the following requirements:
 
 - Python 3.x installed on your system.
-- Required Python modules: `datetime`, `socket`, `logging`, `multiprocessing`, `time`.
+- Required Python modules: `datetime`, `socket`, `logging`, `multiprocessing`, `time`, `os`.
 
 ## Usage
 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/surfer_liner/global_port_hunter.git
+   git clone https://github.com/Surfer-liner/global_port_hunter.git
 
 2. Modify the script settings (optional):
 

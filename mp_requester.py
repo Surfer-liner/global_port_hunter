@@ -1,14 +1,19 @@
-import datetime
-import socket
-import logging
-import multiprocessing
+import os
 import time
+import datetime
+import logging
+import socket
+import multiprocessing
 
-# FIXME ———————————————————————————————————————————————————————— SETTINGS ——————
-log_path = '/Users/surfer_liner/python_/projects/test/mp_requester.log'
-open_sockets = '/Users/surfer_liner/python_/projects/test/open_sockets.txt'
-# FIXME ————————————————————————————————————————————————————————————————————————
 
+# Defining the path to the current directory
+current_directory = os.getcwd()
+
+# Defining logging filename
+log_path = current_directory + '/mp_requester.log'
+
+# Defining open sockets filename
+open_sockets = current_directory + '/open_sockets.txt'
 
 # Installing the application output
 logging.basicConfig(filename=log_path, level=logging.INFO)
@@ -44,6 +49,8 @@ def ip_generator(queue):
         formatted_time = current_time.strftime('%H:%M:%S')
         # Fix error in the log
         logging.error(f'{formatted_time} ERR ip_generator: {e}')
+        # Continue generation
+        pass
 
 
 def ip_checker(queue):
@@ -106,7 +113,8 @@ def ip_checker(queue):
         formatted_time = current_time.strftime('%H:%M:%S')
         # Fix it in the logs
         logging.error(f'{formatted_time} ERR ip_checker: {e}, {ip}:{port}')
-
+        # Continue scanning
+        pass
 
 if __name__ == '__main__':
     # Determine the number of processes
